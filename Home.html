@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Best Products</title>
     <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./CSS/cssfile.css">
     <link rel="shortcut icon" href="img/_LogoTBP .png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +20,15 @@
     <main>
         <section>
                 <nav>
-                    <div class="logo">
-                        <a href="#"><img src="/img/_LogoTBP .png"></a>
+                    <div class="logo-nav">
+                        <!-- <a href="#"><img src="/img/_LogoTBP .png"></a> -->
+                        <h1><Span>T</Span><span>B</span><span>P</span></h1>
                     </div>
                     <ul>
                         <li><a href="#Home">Home</a></li>
                         <li><a href="#Products">Products</a></li>
                         <li><a href="#Services">Services</a></li>
-                        <li><a href="#Review">Review</a></li>
-                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact Us">Contact Us</a></li>
                     </ul>
                     <div class="search">
                         <input type="text" class="search-bar" placeholder="Search...">
@@ -39,481 +40,56 @@
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </nav>
+                <div class="slider">
+                    <!-- fade css -->
+                    <div class="myslide fade">
+                        <!-- <div class="txt">
+                            <h1>IMAGE 1</h1>
+                            <p>Web Devoloper<br>Subscribe To My Channel For More Videos</p>
+                        </div> -->
+                        <img src="./img/computer-01.jpg" style="width: 100%; height: 100%;">
+                    </div>
+                    
+                    <div class="myslide fade">
+                        <img src="./img/computer-03.jpg" style="width: 100%; height: 100%;">
+                    </div>
+                    
+                    <div class="myslide fade">
+                        <!-- <div class="txt">
+                            <h1>IMAGE 3</h1>
+                            <p>Web Devolop  r<br>Subscribe To My Channel For More Videos</p>
+                        </div> -->
+                        <img src="./img/computer-02.png" style="width: 100%; height: 100%;">
+                    </div>
+                    
+                    <div class="myslide fade">
+                        <img src="./img/computer-04.jpg" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="myslide fade">
+                        <img src="./img/service-01.png" style="width: 100%; height: 100%;">
+                    </div>
+                    <!-- /fade css -->
+                    
+                    <!-- onclick js -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    <div class="dotsbox" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <!-- <span class="dot" onclick="currentSlide(5)"></span> -->
+                    </div>
+                    <!-- /onclick js -->
+                </div>
                 <div class="main" id="Home">
                     <div class="main-content">
-                        <!-- <div class="main-text">
-                            <h1>NIKE<br><span>Collection</span></h1>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                It has survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged.
-                        </div>
-                        <div class="main-image">
-                            <img src="./image/shoes.png" alt="">
-                        </div> -->
+                        
                     </div>
-                    <!-- <div class="social-icons">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div> -->
-                    <!-- <div class="button">
-                        <a href="#">SHOP NOW</a>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div> -->
                 </div>
         </section>
-
-        <!-- Products -->
-        <!-- <div class="products" id="Products">
-            <h1>Products</h1>
-            <div class="box">
-                <div class="card">
-                    <div class="small-card">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-                    <div class="image">
-                        <img src="./image/shoes1.png" >
-                    </div>
-                    <div class="products-text">
-                        <h2>NIKE</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing </p>
-                        <h3>$100.99</h3>
-                        <div class="products-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <a href="#" class="btn">Add To Cart</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="small-card">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-                    <div class="image">
-                        <img src="./image/shoes2.png" >
-                    </div>
-                    <div class="products-text">
-                        <h2>NIKE</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing </p>
-                        <h3>$200.99</h3>
-                        <div class="products-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-
-                        </div>
-                        <a href="#" class="btn">Add To Cart</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="small-card">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-                    <div class="image">
-                        <img src="./image/shoes3.png" >
-                    </div>
-                    <div class="products-text">
-                        <h2>NIKE</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing </p>
-                        <h3>$150.99</h3>
-                        <div class="products-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <a href="#" class="btn">Add To Cart</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="small-card">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-                    <div class="image">
-                        <img src="./image/shoes4.png" >
-                    </div>
-                    <div class="products-text">
-                        <h2>NIKE</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing </p>
-                        <h3>$110.99</h3>
-                        <div class="products-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <a href="#" class="btn">Add To Cart</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="small-card">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-                    <div class="image">
-                        <img src="./image/shoes5.png" >
-                    </div>
-                    <div class="products-text">
-                        <h2>NIKE</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing </p>
-                        <h3>$250.99</h3>
-                        <div class="products-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <a href="#" class="btn">Add To Cart</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="small-card">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-                    <div class="image">
-                        <img src="./image/shoes6.png" >
-                    </div>
-                    <div class="products-text">
-                        <h2>NIKE</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing </p>
-                        <h3>$120.99</h3>
-                        <div class="products-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            
-                        </div>
-                        <a href="#" class="btn">Add To Cart</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="small-card">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-                    <div class="image">
-                        <img src="./image/shoes7.png" >
-                    </div>
-                    <div class="products-text">
-                        <h2>NIKE</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing </p>
-                        <h3>$300.99</h3>
-                        <div class="products-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <a href="#" class="btn">Add To Cart</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="small-card">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-                    <div class="image">
-                        <img src="./image/shoes8.png" >
-                    </div>
-                    <div class="products-text">
-                        <h2>NIKE</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing </p>
-                        <h3>$100.99</h3>
-                        <div class="products-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            
-                        </div>
-                        <a href="#" class="btn" >Add To Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- End Products -->
-        <!-- About Us -->
-            <!-- <div class="about" id="About">
-                <h1>Web<span>About</span></h1>
-                <div class="about-main">
-                    <div class="about-image">
-                        <div class="about-small-image">
-                            <img src="image/red_shoes1.png" onclick="child(this)">
-                            <img src="image/red_shoes2.png" onclick="child(this)">
-                            <img src="image/red_shoes3.png" onclick="child(this)">
-                            <img src="image/red_shoes4.png" onclick="child(this)">
-                        </div> 
-                        <div class="image-container">
-                            <img src="image/shoesyellow.png" id="image-box">
-                        </div>
-                    </div>
-                    <div class="about-text">
-                        <p>
-                            Contrary to popular belief, Lorem Ipsum is not simply
-                            random text. It has roots in a piece of classical Latin 
-                            literature from 45 BC, making it over 2000 years old.
-                            Richard McClintock, a Latin professor at Hampden-Sydney 
-                            College in Virginia, looked up one of the more obscure Latin
-                            words, consectetur, from a Lorem Ipsum passage, and going 
-                            through the cites of the word in classical literature,
-                            discovered the undoubtable source. Lorem Ipsum comes from
-                            sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-                            (The Extremes of Good and Evil) by Cicero, written in 45 BC.
-                            This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                            comes from a line in section 1.10.32.
-                            It is a long established fact that a reader will be distracted by
-                            the readable content of a page when looking at its layout. The point of using Lorem 
-                            Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
-                            'Content here, content here', making it look like readable English.
-                        </p>
-                    </div>
-                </div>
-                <a href="#" class="about-btn">Shop Now</a>
-                <script>
-                    function child(small){
-                        var full = document.getElementById("image-box")
-                        full.scr = small.scr
-                    }
-                </script>
-            </div> -->
-        <!-- End About Us-->
-        <!-- Reviewer-->
-            <!-- <div class="review" id="Review">
-                <h1>Customer<span>review</span></h1>
-                <div class="review-box">
-                    <div class="review-card">
-                        <div class="card-top">
-                            <div class="profile">
-                                <div class="profile-img">
-                                    <img src="/image/girl_dp1.jpg">
-                                </div>
-                                <div class="name">
-                                    <strong>Ranidi Locha</strong>
-                                    <div class="like">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p>
-                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                            </p>
-                        </div>      
-                    </div>
-
-                    <div class="review-card">
-                        <div class="card-top">
-                            <div class="profile">
-                                <div class="profile-img">
-                                    <img src="/image/gir_dp2.jpg">
-                                </div>
-                                <div class="name">
-                                    <strong>Song Jeck</strong>
-                                    <div class="like">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p>
-                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="review-card">
-                        <div class="card-top">
-                            <div class="profile">
-                                <div class="profile-img">
-                                    <img src="/image/gir_dp3.jpg">
-                                </div>
-                                <div class="name">
-                                    <strong> Young siv</strong>
-                                    <div class="like">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p>
-                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="review-box">
-                    <div class="review-card">
-                        <div class="card-top">
-                            <div class="profile">
-                                <div class="profile-img">
-                                    <img src="/image/man_dp1.jpg">
-                                </div>
-                                <div class="name">
-                                    <strong>Luckcy hiko</strong>
-                                    <div class="like">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p>
-                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="card-top">
-                            <div class="profile">
-                                <div class="profile-img">
-                                    <img src="/image/man_dp2.jpg">
-                                </div>
-                                <div class="name">
-                                    <strong>Brown Brownggg</strong>
-                                    <div class="like">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p>
-                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="review-card">
-                        <div class="card-top">
-                            <div class="profile">
-                                <div class="profile-img">
-                                    <img src="/image/man_dp3.jpg">
-                                </div>
-                                <div class="name">
-                                    <strong>May Boss</strong>
-                                    <div class="like">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p>
-                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div> -->
-        <!-- End Reviewer-->
-         <!-- Services-->
-        <!-- <div class="services" id="Services">
-            <h1>our<span>services</span></h1>
-            <div class="services-card">
-
-                <div class="services-box">
-                    <i class="fa-solid fa-truck-fast"></i>
-                    <h3>Fast Delivery</h3>
-                    <P>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. </P>
-                </div>
-                <div class="services-box">
-                    <i class="fa-solid fa-rotate-right"></i>
-                    <h3>10 Day Replacement</h3>
-                    <P>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. </P>
-                </div>
-                <div class="services-box">
-                    <i class="fa-solid fa-headphones"></i>
-                    <h3>24 x 7 Support</h3>
-                    <P>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. </P>
-                </div>
-            </div>
-            
-        </div> -->
-          <!-- End  Services-->
-          <!-- Login Form -->
-        <!-- <div class="login-form">
-            <div class="left">
-                <img src="./image/logshoes.png">
-            </div>
-            <div class="right">
-                <h1>Welcome Back!</h1>
-
-                <form action="#" method="post">
-                    <p>Username </p>
-                    <div class="user">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" name="user" placeholder="User Name" class="username">
-                    </div>
-                    <p class="password-tag">Password</p>
-                    <div class="password">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" name="password" placeholder="Password" class="password-input">
-                    </div>
-                    <p class="forgot">forgot password ?</p>
-                    <button type="submit">Login</button>
-                    <div class="login-icon">
-                        <a href="#"><img src="./image/google.png"></a>
-                        <a href="#"><img src="./image/facebook.png"></a>
-                        <a href="#"><img src="./image/twitter.png"></a>
-                    </div>
-                </form>
-            </div>
-        </div> -->
-        <!-- End Login Form -->
-
         <!-- Footer -->
         <footer>
             <div class="footer-main">
@@ -546,18 +122,11 @@
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
-                <!-- <div class="tag">
-                    <h1>Newsletter</h1>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Your email id here!">
-                        <button type="submit">Subscribe</button>
-                    </div>
-                    </div>
-                </div> -->
             </div>
         </footer>
         <!-- End Footer-->
 
     </main> 
+    <script src="./Java/jsfile.js"></script>
 </body>
 </html>
